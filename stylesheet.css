@@ -1,0 +1,320 @@
+/* Write your code at the bottom */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 250px 0 200px 0;
+  background-image: url(img/main.jpg);
+  background-size: cover;
+  /* color: rgb(47, 29, 52); */
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  margin-bottom: 3px;
+  font-size: 25px;
+  color: yellow;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.online {
+  background-color: #239b76;
+  animation-name: animasi-online;
+  animation-duration: 5s;
+}
+
+.offline {
+  background-color: yellow;
+  animation-name: animasi-offline;
+  animation-duration: 5s;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: rgba(47, 29, 52, 0.9);
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: rgba(47, 29, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: yellow;
+  margin-top: 15px;
+  float: left;
+}
+
+.kata-logo {
+  color: white;
+  margin-top: 19px;
+  float: left;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 80px;
+  padding: 0 15px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 33.333%;
+}
+
+.lesson-message {
+  float: left;
+  width: 25%;
+}
+
+.lessons img {
+  width: 250px;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+}
+
+.lesson-icon-2 {
+  position: relative;
+}
+
+.lesson-icon-2 p {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+}
+
+.lesson-icon-3 {
+  position: relative;
+}
+
+.lesson-icon-3 p {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+}
+
+.lesson-message img {
+  width: 200px;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 20px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: rgb(71, 49, 87);
+}
+
+.logo-footer {
+  margin-top: 7px;
+  color: yellow;
+  float: left;
+}
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.footer-mid {
+  text-align: center;
+}
+
+.footer-right {
+  text-align: center;
+}
+
+.footer-right a {
+  color: #b3aeb5;
+  line-height: 65px;
+  padding: 0 25px;
+  display: inline-block;
+  transition: all 0.5s;
+}
+.footer-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 25px 0;
+  opacity: 0;
+}
+
+/* animation */
+@keyframes animasi-online {
+  0% {
+    background-color: purple;
+  }
+  25% {
+    background-color: lightgrey;
+  }
+  50% {
+    background-color: pink;
+  }
+  100% {
+    background-color: #239b76;
+  }
+}
+
+@keyframes animasi-offline {
+  0% {
+    background-color: lightgrey;
+  }
+  25% {
+    background-color: pink;
+  }
+  50% {
+    background-color: purple;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
